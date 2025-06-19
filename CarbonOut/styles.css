@@ -1,0 +1,31 @@
+/* Estilos generales para CarbonOut */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0fff0;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 1rem;
+}
+
+main {
+  padding: 2rem;
+}
+
+img.icon {
+  width: 120px;
+  margin: 1rem auto;
+}
+
+footer {
+  background-color: #e0e0e0;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #555;
+}

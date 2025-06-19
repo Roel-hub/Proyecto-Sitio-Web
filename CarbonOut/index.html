@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#4CAF50" />
+  <title>CarbonOut – Reduce tu Huella</title>
+
+  <!-- Manifest -->
+  <link rel="manifest" href="manifest.json" />
+  
+  <!-- Iconos  -->
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/logo-192.png">
+  <link rel="apple-touch-icon" sizes="512x512" href="icons/logo-512.png">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header>
+    <h1>CarbonOut</h1>
+    <p>Reduce tu huella ecológica, ¡una acción a la vez!</p>
+  </header>
+
+  <main>
+    <img src="icons/logo-192.png" alt="Ícono de CarbonOut" class="icon" />
+    <h2>¡Bienvenido!</h2>
+    <p>Esta es la versión inicial de la PWA de CarbonOut.</p>
+    <p>Muy pronto podrás registrar acciones ecológicas, ver tu impacto y competir en el ranking 🌍</p>
+  </main>
+
+  <footer>
+    &copy; 2025 CarbonOut – Todos los derechos reservados
+  </footer>
+
+  <!-- Registro del Service Worker -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js')
+        .then(reg => console.log('✅ Service Worker registrado', reg))
+        .catch(err => console.error('❌ Error al registrar el Service Worker', err));
+    }
+  </script>
+
+</body>
+</html>
